@@ -1,0 +1,261 @@
+*{ /* reset */
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+.container{
+    display: grid; /* Activa el modelo de CSS Grid, que permite distribuir elementos en filas y columnas con control avanzado */
+    grid-template-columns: 7fr 18fr 9fr; /* tres columnas de diferentes anchos */
+    grid-template-rows: auto; 
+    gap: 10px; /* espacio entre filas y columnas*/
+    width: 100vw; /* asegura todo uso del viewport*/
+    height: auto;
+    background-color: black;
+    padding: 10px; /* Agrega un poco de espacio alrededor del contenedor */ 
+}
+
+.container-2{
+    display: grid; /* Activa el modelo de CSS Grid, que permite distribuir elementos en filas y columnas con control avanzado */
+    grid-template-columns: 1fr; /* 1 columna */
+    grid-template-rows: 250px; 
+    gap: 10px; /* espacio entre filas y columnas*/
+    width: 100vw; /* asegura todo uso del viewport*/
+    height: auto;
+    background-color: rgba(158, 227, 238,0.2);
+    padding: 10px; /* Agrega un poco de espacio alrededor del contenedor */
+       
+}
+
+.item{
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    padding:5px;
+    margin: 5px;
+    color: black; /* Asegura que el texto sea visible sobre el fondo */
+  
+}
+
+.item-2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center; /*Alinea los elementos a lo largo del eje horizontal */
+    align-items: center; /*Centra los elementos dentro de su celda horizontalmente*/
+    justify-content: space-evenly; /*controla la alineación de los elementos flexibles (los ítems dentro del contenedor flex) a lo largo del eje principal (que normalmente es el eje horizontal, pero puede ser el eje vertical si cambias la dirección del contenedor con flex-direction*/
+    /* background-color: rgba(158, 227, 238,0.2); */
+    text-align: center;
+    padding:5px;
+    margin: 5px;
+    color: black; /* Asegura que el texto sea visible sobre el fondo */
+    font-size: clamp(60px, 2vw + 1rem, 65px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    font-weight: 200;
+}
+
+.item-3{
+    display: flex;
+    flex-direction: row;
+    justify-items: center; /*Alinea los elementos a lo largo del eje horizontal */
+    align-items: center; /*Centra los elementos dentro de su celda horizontalmente*/
+    justify-content: space-evenly; /*controla la alineación de los elementos flexibles (los ítems dentro del contenedor flex) a lo largo del eje principal (que normalmente es el eje horizontal, pero puede ser el eje vertical si cambias la dirección del contenedor con flex-direction
+    /* background-color: rgba(158, 227, 238,0.2); */
+    text-align: center;
+    /* padding:5px;
+    margin: 5px;
+    color: black; /* Asegura que el texto sea visible sobre el fondo */
+    font-size: clamp(60px, 2vw + 1rem, 65px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    /* font-weight: 200;  */
+}
+
+.item-3  .bi{
+    color: #3982e7;
+}
+
+.item-4{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: left;
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    margin-bottom: 200px;
+    gap:10px;
+}
+
+.item-5{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    margin-top: 70px;
+}
+
+.item-4 p, i{
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    color: #f25c8e;
+    text-align: left;
+}
+.item-5 p, i{
+    font-size: clamp(12px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    color: #f6f0f0;
+}
+
+.item-4 a{
+    font-size: clamp(12px, 2vw + 1rem, 16px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    color: #f6f0f0;
+    text-decoration: none;
+}
+
+.container-3{
+    display: grid; /* Activa el modelo de CSS Grid, que permite distribuir elementos en filas y columnas con control avanzado */
+    grid-template-columns: 1fr 1fr; /* dos columnas de diferentes anchos */
+    grid-template-rows: 200px 200px 200px; /* 3 filas de igual ancho*/
+    gap: 20px; /* espacio entre filas y columnas*/
+    width: 80vw; /* asegura todo uso del viewport*/
+    height: auto;
+    background-color: white;
+    padding: 90px; /* Agrega un poco de espacio alrededor del contenedor */
+       
+}
+
+.container-4{
+    display: grid; /* Activa el modelo de CSS Grid, que permite distribuir elementos en filas y columnas con control avanzado */
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr; /* 5 columnas de diferentes anchos */
+    grid-template-rows: 200px; /* 1 filas */
+    gap: 50px; /* espacio entre filas y columnas*/
+    width: 100vw; /* asegura todo uso del viewport*/
+    height: 150px;
+    background-color: black;
+    padding: 90px; /* Agrega un poco de espacio alrededor del contenedor */
+       
+}
+
+.footer-title{
+    font-size: 20px;
+    color: #f6f0f0;
+}
+
+.footer-title2{
+    font-size: 18px;
+    color: #f6f0f0;
+}
+
+.sub-container3{
+    display:flex;
+   justify-items: left;
+   align-items: flex-start;
+    flex-direction: column;
+    padding: 30px; /* Agrega un poco de espacio alrededor del contenedor */
+    margin-left: 10px;
+}
+
+
+.sub-container3 a{ 
+    color:#74baef;
+    font-size: clamp(15px, 2vw + 1rem, 16px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+}
+
+p{
+    font-size: clamp(16px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    text-align: justify;
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* Para que los elementos queden en línea */
+}
+
+nav a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(244, 238, 238); /* Ajusta el color si es necesario */
+    font-size: clamp(14px, 2vw + 1rem, 18px); /* Tamaño flexible con un rango: fuente sea escalable entre 14px y 18px, dependiendo del tamaño de la pantalla, pero no excederá esos límites. */
+    font-weight: 200;
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Alineación vertical correcta */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.button1 {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Borde delgado gris */
+    border-color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  .button1:hover {
+    background-color:  #ccc;
+    transition: background-color 0.3s ease;
+  }
+
+  .button1:active {
+    background-color:  #ebebeb;
+    transition: background-color 0.3s ease;
+  }
+
+  
+button {
+    background-color: #4211f4;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #4ca5e9;
+  }
+
+  button:active {
+    background-color: #29d9f4;
+  }
+
+  .search-container {
+    position: relative; /* Necesario para posicionar el icono */
+  }
+  
+  /*  Input */
+
+  input[type="search"] {
+    padding-right: 30px; /* Espacio para el icono de la flecha */
+    border: 1px solid #ccc; /* Borde delgado */
+    font-size: 25px;
+    border-radius: 4px;
+    padding-left: 10px; /* Espaciado interno para que no se vea pegado al borde */
+    width: 500px; /* Ancho del campo de búsqueda */
+  }
+  
+  .search-container i {
+    position: absolute;
+    right: 10px; /* Posiciona la flecha al final del campo */
+    /* top: 70%; */
+    transform: translateY(165%); /* Centra verticalmente la flecha */
+    font-size: 18px; /* Tamaño de la flecha */
+    color: #333; /* Color de la flecha */
+  }
+  
